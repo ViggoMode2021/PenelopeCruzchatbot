@@ -8,12 +8,12 @@ plist = [      'Hola',
                'Hola me llamo Penélope Cruz. Mucho gusto.',
                '¿Cómo estás?',
                'Estoy bien, gracias. ¿Y tú?',
-               'Estoy bien',
-               'Excelente, tú estás feliz.',
-               'Estoy mal',
-               'Lo siento, tú estás triste.',
-               'Estoy así así.',
-               'Okay, tú estás regular.',
+               '¿Cómo eres?',
+               'Yo soy alta, bronceada, talentosa, y sociable.',
+               '¿Cómo son tus primos?',
+               'Mis primos son trabajadores, inteligentes, rubios, y delgados.',
+               '¿Cómo son tú y tu hermana?.',
+               'Mi hermana y yo tenemos pelo largo y somos jóvenes y artísticas.',
                '¿Qué te gusta hacer?',
                'Me gusta cantar, correr, y bailar.',
                '¿Cuál es la fecha de tu cumpleaños?',
@@ -24,8 +24,6 @@ plist = [      'Hola',
                'Mi color favorito es rojo.',
                '¿De dónde eres?',
                'Yo soy de Alcobendas, España.',
-               '¿Cómo eres?',
-               'Yo soy bonita, talentosa, sociable, y trabajadora.',
                '¿Qué comes en el desayuno?',
                'Yo como huevos, pan tostado, tocino, y fresas.',
                '¿Qué bebes en el desayuno?',
@@ -49,7 +47,6 @@ def bot_reply():
     text_area.insert(END, "Penélope Cruz: " + str(answer) + '\n\n')
     pyttsx3.speak(answer)
     question_field.delete(0, END)
-
 
 root.geometry('500x570')
 root.title('El robot de Penelope Cruz')
